@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My first socket web</title>
+  <link rel="stylesheet" href="./styles.css"> 
 </head>
 <body>
   <ul id="messages"></ul>
@@ -12,7 +13,6 @@
   </form>
 
   <script src="/socket.io/socket.io.js"></script>
-
   <script>
     const socket = io();
 
@@ -26,7 +26,6 @@
       messages.appendChild(item);
       window.scrollTo(0, document.body.scrollHeight);
     });
-
 
     form.addEventListener('submit', function(e) {
       e.preventDefault();
